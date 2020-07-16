@@ -1,0 +1,87 @@
+
+<html>
+
+    <head>
+        <title style="font-size: 28px;color: black;">Reports</title>
+        <style>
+            body {              
+                    color:black;
+                    font-family: Helvetica;
+                    background-image: url("Light Grey.jpg")
+                    } 
+            h1{
+                text-align: center;
+            }
+            p{
+                font-size: 16px;
+                color: black;
+                
+              } 
+              .dropbtn {
+              background-color:rgb(124, 111, 245);
+              color: black;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              position: relative;
+           
+            }  
+              .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: relative;
+             
+              background-color: #f1f1f1;
+              min-width: 25px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #ddd;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            .dropdown:hover .dropbtn {background-color: rgb(124, 111, 245);} 
+            </style>
+    
+        <script type="text/javascript"
+            src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script type="text/javascript">
+            function initViz() {
+                var containerDiv = document.getElementById("vizContainer"),
+                    url = "https://public.tableau.com/views/ExecutiveSalesforce_10_01_2/SalesSummary?:language=en&:display_count=y&:origin=viz_share_link",
+                    options = {
+                        hideTabs: true,
+                        hideToolbar:true,
+                        onFirstInteractive: function () {
+                            console.log("Run this code when the viz has finished loading.");
+                        }
+                    };
+    
+                var viz = new tableau.Viz(containerDiv, url, options);
+                // Create a viz object and embed it in the container div.
+            }
+        </script>
+    <body>
+        <h1>Embedding Tableau Dashboards in a Webpage</h1>
+        <p><b>Sales Summary Dashboard</b></p>  
+    </body>
+    <br></br>
+    <body onload="initViz();">
+    
+        
+        <div id="vizContainer" style="width:1330px; height:650px;"></div>
+    </body>
+    
+    </html>

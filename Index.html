@@ -1,0 +1,108 @@
+
+<html>
+
+    <head>
+        <title style="font-size: 28px;color: black;">Reports</title>
+        <style>
+            body {              
+                    color:black;
+                    font-family: Helvetica;
+                    background-image: url("Light Grey.jpg")
+                    } 
+            h1{
+                text-align: center;
+            }
+            p{
+                font-size: 16px;
+                color: black;
+                
+              } 
+              .dropbtn {
+              background-color:rgb(124, 111, 245);
+              color: black;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              position: relative;
+           
+            }  
+              .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: relative;
+             
+              background-color: #f1f1f1;
+              min-width: 25px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #ddd;}
+            
+            .dropdown:hover .dropdown-content {display: block;}
+            
+            .dropdown:hover .dropbtn {background-color: rgb(124, 111, 245);} 
+            </style>
+    
+    
+    <!--   Tableau javascript API   -->
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+
+    <!--   Tableau embed scripts   -->
+  <script src="E:\Website/script.js"></script>
+
+  <body>
+    <h1>Embedding Tableau Dashboards in a Webpage</h1>
+    <p><b>Please select any of the dashboards in the below dashboard list to navigate to corresponding dashboards.</b></p>
+    <div class="dropdown">
+        <button class="dropbtn">Dashboard List</button>
+        <div class="dropdown-content">
+          <a href="Sales Growth.html">Sales Growth Dashboard</a>
+          <a href="Sales Territory Assignments.html">Sales Territory Assignment Dashboard</a>
+          <a href="Sales Summary.html">Sales Summary Dashboard</a>
+        </div>
+</body>
+<div id="tabopportunity" style="width:1300px; height:520px;"></div>
+<body onload="initViz();"></body>
+<br></br>
+<body>
+
+
+    <p>Above dashboard consists of the following KPI's <br></br>
+      1.Open Opportunites Count.<br></br>
+      2.Total Number of Accounts.<br></br>
+      3.Expected Amount.<br></br>
+      4.Number of Opportunities by stages.<br></br>
+
+      Steps to Improve Sales Opportunites:
+      <br></br>
+      <img src="E:\Website\Opportunities.png" alt="Image" width="700" height="500">
+      <br></br>
+      <br></br>
+      A sales opportunity is a contact or an account which has been qualified. This person has entered into your sales cycle and is committed to working with you. You have already contacted, called or met him and know their needs or requirements. The old sales rule says: “The opportunity is a deal that you have the possibility to close!”
+      The opportunity or a deal is a foundation of each sale you are working on. If you are in the business of selling you are probably using a sales process to guide your sales activities through to the sale. This process can be called as a sales pipeline management or opportunity pipeline management
+     <br></br>
+      Here are the 3 benefits of using opportunity management for your business:
+      <br></br>
+      1.Optimize opportunities pipeline workflow – standardize your sales process and keep your opportunities moving forward.
+      <br></br>
+      2.Improve your win rates – see what you need to do next and how to complete each sales step.
+      <br></br>
+      3.Enhance your opportunities insights – focus on the opportunities that matter the most.
+    </p>
+    </body>
+    <br></br>
+    <div id="tabMonthlySales" style="width:1300px; height:520px;"></div>
+<body onload="initViz();"></body>
